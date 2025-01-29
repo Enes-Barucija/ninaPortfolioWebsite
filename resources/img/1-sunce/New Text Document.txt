@@ -1,0 +1,9 @@
+logo (and stars): 
+
+yellow - #fcb638
+orange- #f88b1c
+oranger orange - #dbed23
+brown-ish - #3f0000
+
+
+bckgr- #fcffe0
