@@ -12,13 +12,6 @@
       rel="stylesheet"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aladin&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="./js/script.js"></script>
     <title>Call the Lizard | Portfolio</title>
@@ -28,8 +21,8 @@
       <a href="#">
         <img
           class="logo-header"
-          alt="Call-the-Lizard Logo"
           src="resources/logo/logo.png"
+          alt="Call-the-Lizard Logo"
         />
       </a>
       <nav class="main-nav">
@@ -52,7 +45,7 @@
       <div class="hero">
         <img
           class="victorian-street"
-          src="./resources/img/Art/victorian street ink.png"
+          src="resources/img/Art/victorian-street-ink.webp"
           alt="victorian street digital drawing"
         />
       </div>
@@ -65,30 +58,75 @@
           piece o a larger animation, but now stands as a personal exploration
           of functionality and aesthetics.
         </p>
-        <img
-          src="./resources/img/Art/robotic pg.webp"
-          alt="low poly mech design"
-        />
+        <div class="mech-design-img">
+          <div class="mech-design-left">
+            <img
+              src="resources/img/Art/mech/mech-left.webp"
+              alt="mech design concept - poses and colors"
+            />
+          </div>
+          <div class="mech-design-right">
+            <img
+              src="resources/img/Art/mech/mech-right-1.webp"
+              alt="mech design concept sheet"
+            />
+            <img
+              src="resources/img/Art/mech/mech-right-2.webp"
+              alt="mech design render"
+            />
+          </div>
+        </div>
       </div>
       <div class="divider-purple"></div>
 
-      <div class="mech-designs-container">
-        <p>
-          This project showcases a set of customizable low-poly vehicles,
-          designed in Blender with modularity and visual cohesion in mind.
-        </p>
+      <div class="wagon-designs-container">
+        <div class="wagon-design-text">
+          <p>
+            This project showcases a set of customizable low-poly vehicles,
+            designed in Blender with modularity and visual cohesion in mind.
+          </p>
 
-        <p>
-          The components are interchangeable, allowing for multiple combinations
-          while maintaining a unified aesthetic. To be more space efficient, all
-          parts share a single texture sheet. From small caravans to mobile
-          modular homes, this set was a real challemge in both creative
-          flexibility and technical precision!
-        </p>
-        <img
-          src="./resources/img/Art/modular house wagon.webp"
-          alt="low poly modular house wagon"
-        />
+          <p>
+            The components are interchangeable, allowing for multiple
+            combinations while maintaining a unified aesthetic. To be more space
+            efficient, all parts share a single texture sheet. From small
+            caravans to mobile modular homes, this set was a real challemge in
+            both creative flexibility and technical precision!
+          </p>
+        </div>
+
+        <div class="wagon-design-img-container">
+          <div class="wagon-render-large">
+            <img
+              src="resources/img/Art/wagon/wagon-render-large.webp"
+              alt="modular vehicle design illustration"
+            />
+          </div>
+          <div class="wagon-top">
+            <img
+              src="resources/img/Art/wagon/wagon-render-small.webp"
+              alt="modular vehicle design 3D render"
+            />
+            <img
+              src="resources/img/Art/wagon/wagon-sketch.webp"
+              alt="modular vehicle design sketches"
+            />
+          </div>
+          <div class="wagon-bottom">
+            <img
+              src="resources/img/Art/wagon/wagon-1.webp"
+              alt="modular vehicle design wagon sketch"
+            />
+            <img
+              src="resources/img/Art/wagon/wagon-2.webp"
+              alt="modular vehicle design wagon sketch"
+            />
+            <img
+              src="resources/img/Art/wagon/wagon-3.webp"
+              alt="modular vehicle design wagon sketch"
+            />
+          </div>
+        </div>
       </div>
       <div class="divider-orange"></div>
       <div class="robots-design-container">
@@ -105,24 +143,24 @@
         </p>
         <img
           class="robots"
-          src="./resources/img/Art/robots-painting-large.webp"
-          alt="digital robot artwork"
+          src="./resources/img/Art/robots/robots-painting-large.webp"
+          alt="robot - digital artwork"
         />
         <div class="robot-pair">
           <img
             class="robots"
-            src="./resources/img/Art/robots-blender.webp"
+            src="./resources/img/Art/robots/robots-blender.webp"
             alt="blender render of the robots design"
           />
           <img
             class="robots"
-            src="./resources/img/Art/robots-modelling-reference.webp"
+            src="./resources/img/Art/robots/robots-modelling-reference.webp"
             alt="modellling reference of the robots design"
           />
         </div>
         <img
           class="robots"
-          src="./resources/img/Art/robots-painting-watercolor.webp"
+          src="./resources/img/Art/robots/robots-painting-watercolor.webp"
           alt="robots artwork watercolor"
         />
       </div>
@@ -143,18 +181,18 @@
         </p>
         <img
           class="gotiva-illustration"
-          src="./resources/img/Art/cyberpunk.webp"
+          src="./resources/img/Art/gotiva/cyberpunk.webp"
           alt="cyberpunk city illustration"
         />
         <div class="illustration-pair">
           <img
             class="gotiva-illustration"
-            src="./resources/img/Art/shark-bridge.webp"
+            src="./resources/img/Art/gotiva/shark-bridge.webp"
             alt="illustration of a bridge city with a shark in the water"
           />
           <img
             class="gotiva-illustration"
-            src="./resources/img/Art/pireates-table.webp"
+            src="./resources/img/Art/gotiva/pireates-table.webp"
             alt="pirate map illustration"
           />
         </div>
@@ -162,21 +200,27 @@
     </section>
     <footer class="footer" id="contact">
       <address>
-        <span><img class="email-img" src="resources/icons/mail.png" /></span
-        ><a
+        <a
           class="email"
           href="mailto:karamehmedovic.nina@gmail.com"
           target="_blank"
-          >karamehmedovic.nina@gmail.com</a
+          ><img
+            class="email-img"
+            src="resources/icons/mail.png"
+            alt="email icon"
+          />
+          karamehmedovic.nina@gmail.com</a
         >
       </address>
       <address class="artstation">
-        <span><img src="resources/icons/artstation.png" /></span
-        ><a
+        <a
           class="email"
           href="https://callthelizard.artstation.com/"
           target="_blank"
-          >callthelizard.artstation.com</a
+          ><img
+            src="resources/icons/artstation.png"
+            alt="artstation icon"
+          />callthelizard.artstation.com</a
         >
       </address>
     </footer>

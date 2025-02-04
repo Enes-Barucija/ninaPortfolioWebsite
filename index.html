@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio website"
-    />
+    <meta name="description" content="Portfolio website" />
     <link rel="icon" href="./resources/img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,10 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="./js/script.js"></script>
@@ -28,8 +21,8 @@
       <a href="#">
         <img
           class="logo-header"
-          alt="Call-the-Lizard Logo"
           src="resources/logo/logo.png"
+          alt="Call-the-Lizard Logo"
         />
       </a>
       <nav class="main-nav">
@@ -43,40 +36,75 @@
       </nav>
     </header>
 
-    <section class="section-portfolio hero">
-      <img
-        class="hero-section-img section-img"
-        src="resources/img/hero-background.webp"
-        alt="hero section background image"
-      />
-    </section>
+    <a class="btn-top hidden" href="#">
+      <p class="symbol-top">
+        <span>&uarr;</span>
+        <span>TOP</span>
+      </p>
+    </a>
 
+    <section class="section-portfolio hero">
+      <div class="hero-img-container">
+        <img
+          src="resources/img/hero-background-1.png"
+          alt="hero section background image"
+        />
+        <img
+          src="resources/img/hero-background-2.png"
+          alt="hero section background image"
+        />
+      </div>
+    </section>
 
     <section class="qualifications" id="qualifications">
-        <img class="qualifications-img" src="resources/img/qualifications.webp" alt="qualification list"/>
-        <div class="empty-div"></div>
+      <div class="qualifications-img-container">
+        <img
+          src="resources/img/qualifications-1.png"
+          alt="qualification list"
+        />
+        <img
+          src="resources/img/qualifications-2.png"
+          alt="qualification background"
+        />
         <div class="buttons-container">
           <div class="print">
-            <a href="design.html"><p><span>&#8618 </span>Graphic Design</p></a>
-            
+            <a href="design.html"
+              ><p><span>&rarrhk; </span>Graphic Design</p></a
+            >
           </div>
           <div class="art">
-            <a href="art.html"><p><span>&#8618 </span>Illustration</p></a>
-            
+            <a href="art.html"
+              ><p><span>&rarrhk; </span>Illustration</p></a
+            >
           </div>
         </div>
+      </div>
     </section>
+
     <footer class="footer" id="contact">
-      <address >
-        <span><img class="email-img" src="resources/icons/mail.png" /></span
-        ><a class="email" href="mailto:karamehmedovic.nina@gmail.com" target="_blank">karamehmedovic.nina@gmail.com</a>
+      <address>
+        <a
+          class="email"
+          href="mailto:karamehmedovic.nina@gmail.com"
+          target="_blank"
+          ><img
+            class="email-img"
+            src="resources/icons/mail.png"
+            alt="email icon"
+          />
+          karamehmedovic.nina@gmail.com</a
+        >
       </address>
       <address class="artstation">
-        <span
+        <a
+          class="email"
+          href="https://callthelizard.artstation.com/"
+          target="_blank"
           ><img
-            
-            src="resources/icons/artstation.png" /></span
-        ><a class="email" href="https://callthelizard.artstation.com/" target="_blank">callthelizard.artstation.com</a>
+            src="resources/icons/artstation.png"
+            alt="artstation icon"
+          />callthelizard.artstation.com</a
+        >
       </address>
     </footer>
   </body>
