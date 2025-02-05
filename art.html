@@ -14,11 +14,15 @@
 
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <title>Call the Lizard | Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="index.html">
         <img
           class="logo-header"
           src="resources/logo/logo.png"
@@ -34,6 +38,10 @@
           <li><a class="main-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <a class="btn-top hidden" href="#">
       <p class="symbol-top">
@@ -50,7 +58,7 @@
         />
       </div>
       <h2 class="heading mechs">01. Low Poly Vehicle & Mech Designs</h2>
-      <div class="mech-designs-container">
+      <div class="illustrations-text-container">
         <p>
           This project centers around the creation of a small mech design,
           combining various digital techniques, showcasing a process of creating
@@ -58,6 +66,8 @@
           piece o a larger animation, but now stands as a personal exploration
           of functionality and aesthetics.
         </p>
+      </div>
+      <div class="mech-designs-container">
         <div class="mech-design-img">
           <div class="mech-design-left">
             <img
@@ -79,22 +89,22 @@
       </div>
       <div class="divider-purple"></div>
 
+      <div class="illustrations-text-container">
+        <p>
+          This project showcases a set of customizable low-poly vehicles,
+          designed in Blender with modularity and visual cohesion in mind.
+        </p>
+
+        <p>
+          The components are interchangeable, allowing for multiple combinations
+          while maintaining a unified aesthetic. To be more space efficient, all
+          parts share a single texture sheet. From small caravans to mobile
+          modular homes, this set was a real challemge in both creative
+          flexibility and technical precision!
+        </p>
+      </div>
+
       <div class="wagon-designs-container">
-        <div class="wagon-design-text">
-          <p>
-            This project showcases a set of customizable low-poly vehicles,
-            designed in Blender with modularity and visual cohesion in mind.
-          </p>
-
-          <p>
-            The components are interchangeable, allowing for multiple
-            combinations while maintaining a unified aesthetic. To be more space
-            efficient, all parts share a single texture sheet. From small
-            caravans to mobile modular homes, this set was a real challemge in
-            both creative flexibility and technical precision!
-          </p>
-        </div>
-
         <div class="wagon-design-img-container">
           <div class="wagon-render-large">
             <img
@@ -129,7 +139,8 @@
         </div>
       </div>
       <div class="divider-orange"></div>
-      <div class="robots-design-container">
+
+      <div class="illustrations-text-container">
         <p>
           This personal project combines the power of Blender and Photoshop to
           create a concept I had on my mind for months!
@@ -141,6 +152,9 @@
           reappearing in many works to follow. The initial mesh was made in
           Blender, and the textures were later painted on in Adobe Photoshop.
         </p>
+      </div>
+
+      <div class="robots-design-container">
         <img
           class="robots"
           src="./resources/img/Art/robots/robots-painting-large.webp"
@@ -166,7 +180,7 @@
       </div>
 
       <h2 class="heading illustrations">02. Commercial Illustrations</h2>
-      <div class="illustrations-container">
+      <div class="illustrations-text-container">
         <p>
           During my time as a 2D illustrator for a puzzle video game company, I
           created a range of visually engaging artwork, including the three
@@ -179,6 +193,8 @@
           strategic design, crafting compelling content for both in-game
           experiences and promotional materials.
         </p>
+      </div>
+      <div class="illustrations-container">
         <img
           class="gotiva-illustration"
           src="./resources/img/Art/gotiva/cyberpunk.webp"

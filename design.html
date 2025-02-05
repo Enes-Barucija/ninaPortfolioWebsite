@@ -14,11 +14,15 @@
 
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <title>Call the Lizard | Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="index.html">
         <img
           class="logo-header"
           src="resources/logo/logo.png"
@@ -34,6 +38,10 @@
           <li><a class="main-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <a class="btn-top hidden" href="#">
       <p class="symbol-top">
@@ -192,7 +200,8 @@
       </div>
 
       <h2 class="heading books">04. Book Covers & Movie Posters</h2>
-      <div class="books-posters-container">
+
+      <div class="books-posters-text-container">
         <p>
           A collection of unofficial alternative covers for horror classics,
           made for a regular client and a fellow horror genre fan, made with a
@@ -247,13 +256,15 @@
         </div>
       </div>
       <div class="divider-orange"></div>
-      <div class="books-posters-container">
+      <div class="books-posters-text-container">
         <p>
           Creating visually striking posters is one of my favorite ways to bring
           ideas to life! Here is a collection of posters for events and
           community engagement, from advertisements for horror books and movie
           clubs, to a tabletop role-playing event.
         </p>
+      </div>
+      <div class="books-posters-container">
         <div class="poster-gallery-container">
           <div class="top-container">
             <img

@@ -6,6 +6,8 @@ const buttonTop = document.querySelector(".btn-top");
 const body = document.body;
 const html = document.documentElement;
 const allLinks = document.querySelectorAll("a:link");
+const btnMobile = document.querySelector(".btn-mobile-nav");
+const btnTop = document.querySelector(".btn-top");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -29,6 +31,10 @@ obs.observe(hero);
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
+    if (header.classList.contains("nav-open")) {
+      html.classList.toggle("prevent-scrolling");
+    }
+
     const href = link.getAttribute("href");
     if (!href.startsWith("#")) return;
 
@@ -45,4 +51,10 @@ allLinks.forEach(function (link) {
     if (link.classList.contains("main-nav-link"))
       header.classList.toggle("nav-open");
   });
+});
+
+btnMobile.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+  html.classList.toggle("prevent-scrolling");
+  if (!btnTop.classList.contains("hidden")) btnTop.classList.add("hidden");
 });

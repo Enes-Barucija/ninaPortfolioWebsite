@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <title>Call the Lizard | Portfolio</title>
   </head>
   <body>
@@ -34,6 +38,11 @@
           <li><a class="main-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <a class="btn-top hidden" href="#">
@@ -63,18 +72,19 @@
           alt="qualification list"
         />
         <img
+          class="qualifications-img-relative"
           src="resources/img/qualifications-2.png"
           alt="qualification background"
         />
         <div class="buttons-container">
           <div class="print">
             <a href="design.html"
-              ><p><span>&rarrhk; </span>Graphic Design</p></a
+              ><spanp><span>&rarrhk; </span>Graphic Design</spanp></a
             >
           </div>
           <div class="art">
             <a href="art.html"
-              ><p><span>&rarrhk; </span>Illustration</p></a
+              ><span><span>&rarrhk; </span>Illustration</span></a
             >
           </div>
         </div>
