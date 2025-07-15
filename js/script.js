@@ -61,7 +61,7 @@ btnMobile.addEventListener("click", function () {
   if (!btnTop.classList.contains("hidden")) btnTop.classList.add("hidden");
 });
 
-wrapperSmall.addEventListener("click", (e) => {
+wrapperSmall.addEventListener("click", function (e) {
   // If the video itself was clicked:
   if (e.target.matches("video.video")) {
     const video = e.target;
