@@ -8,6 +8,8 @@ const html = document.documentElement;
 const allLinks = document.querySelectorAll("a:link");
 const btnMobile = document.querySelector(".btn-mobile-nav");
 const btnTop = document.querySelector(".btn-top");
+const wrapper = document.querySelector(".videos-container");
+const wrapperSmall = document.querySelector(".videos-container-small");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -57,4 +59,52 @@ btnMobile.addEventListener("click", function () {
   header.classList.toggle("nav-open");
   html.classList.toggle("prevent-scrolling");
   if (!btnTop.classList.contains("hidden")) btnTop.classList.add("hidden");
+});
+
+wrapperSmall.addEventListener("click", (e) => {
+  // If the video itself was clicked:
+  if (e.target.matches("video.video")) {
+    const video = e.target;
+    const container = video.closest(".video-container");
+    const btn = container.querySelector(".btn-play-video");
+    if (!video.paused) {
+      video.pause();
+      btn.classList.remove("hidden");
+    }
+  }
+
+  // If the play button was clicked:
+  if (e.target.matches(".btn-play-video")) {
+    const btn = e.target;
+    const container = btn.closest(".video-container");
+    const video = container.querySelector("video.video");
+    if (video.paused) {
+      video.play();
+      btn.classList.add("hidden");
+    }
+  }
+});
+
+wrapper.addEventListener("click", (e) => {
+  // If the video itself was clicked:
+  if (e.target.matches("video.video")) {
+    const video = e.target;
+    const container = video.closest(".video-container");
+    const btn = container.querySelector(".btn-play-video");
+    if (!video.paused) {
+      video.pause();
+      btn.classList.remove("hidden");
+    }
+  }
+
+  // If the play button was clicked:
+  if (e.target.matches(".btn-play-video")) {
+    const btn = e.target;
+    const container = btn.closest(".video-container");
+    const video = container.querySelector("video.video");
+    if (video.paused) {
+      video.play();
+      btn.classList.add("hidden");
+    }
+  }
 });

@@ -372,6 +372,14 @@ body {
   height: auto;
 }
 
+.video-text-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 8rem;
+}
+
 .dentist-text-container {
   display: flex;
   justify-content: flex-start;
@@ -685,7 +693,47 @@ body {
   height: auto;
 }
 
-/* MEDIA QUERY TEST */
+.videos-container {
+  padding: 0rem 8rem;
+}
+
+.videos-container-small {
+  padding: 0 8rem 4rem 8rem;
+}
+
+.video-container {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+}
+
+.btn-container {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.btn-play-video {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  font-size: 100px;
+  cursor: pointer;
+  color: var(--color-text-light);
+  text-shadow: 1px 1px 2px var(--color-text);
+}
+
+/* MEDIA QUERY */
 
 @media (max-width: 1280px) {
   .heading {
@@ -856,7 +904,9 @@ body {
   .flyer-coupon-container,
   .books-posters-text-container,
   .books-posters-container,
-  .illustrations-text-container {
+  .illustrations-text-container,
+  .video-text-container,
+  .videos-container {
     padding: 3rem 6rem 0 6rem;
   }
   .sunce-container,
@@ -866,7 +916,8 @@ body {
   .mech-designs-container,
   .wagon-designs-container,
   .robots-design-container,
-  .illustrations-container {
+  .illustrations-container,
+  .videos-container-small {
     padding: 3rem 6rem;
   }
   .dentist-container {
@@ -877,6 +928,38 @@ body {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
+  }
+
+  .video-container {
+    position: relative;
+    padding: 0.2rem 0;
+  }
+
+  .video-container video {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .btn-container {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -2.5rem;
+    left: 50%;
+    margin-left: -2.5rem;
+  }
+
+  .btn-play-video {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    font-size: 5rem;
+    cursor: pointer;
+    color: var(--color-text-light);
+    text-shadow: 1px 1px 2px var(--color-text);
   }
 }
 
@@ -973,7 +1056,9 @@ body {
   .flyer-coupon-container,
   .books-posters-text-container,
   .books-posters-container,
-  .illustrations-text-container {
+  .illustrations-text-container,
+  .video-text-container,
+  .videos-container {
     padding: 2rem 4rem 0 4rem;
   }
   .sunce-container,
@@ -983,7 +1068,8 @@ body {
   .mech-designs-container,
   .wagon-designs-container,
   .robots-design-container,
-  .illustrations-container {
+  .illustrations-container,
+  .videos-container-small {
     padding: 2rem 4rem;
   }
 
