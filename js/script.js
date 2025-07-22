@@ -61,50 +61,52 @@ btnMobile.addEventListener("click", function () {
   if (!btnTop.classList.contains("hidden")) btnTop.classList.add("hidden");
 });
 
-wrapperSmall.addEventListener("click", function (e) {
-  // If the video itself was clicked:
-  if (e.target.matches("video.video")) {
-    const video = e.target;
-    const container = video.closest(".video-container");
-    const btn = container.querySelector(".btn-play-video");
-    if (!video.paused) {
-      video.pause();
-      btn.classList.remove("hidden");
+if (wrapperSmall) {
+  wrapperSmall.addEventListener("click", function (e) {
+    // click on video
+    if (e.target.matches("video.video")) {
+      const video = e.target;
+      const container = video.closest(".video-container");
+      const btn = container.querySelector(".btn-play-video");
+      if (!video.paused) {
+        video.pause();
+        btn.classList.remove("hidden");
+      }
     }
-  }
 
-  // If the play button was clicked:
-  if (e.target.matches(".btn-play-video")) {
-    const btn = e.target;
-    const container = btn.closest(".video-container");
-    const video = container.querySelector("video.video");
-    if (video.paused) {
-      video.play();
-      btn.classList.add("hidden");
+    // click on button
+    if (e.target.matches(".btn-play-video")) {
+      const btn = e.target;
+      const container = btn.closest(".video-container");
+      const video = container.querySelector("video.video");
+      if (video.paused) {
+        video.play();
+        btn.classList.add("hidden");
+      }
     }
-  }
-});
+  });
 
-wrapper.addEventListener("click", (e) => {
-  // If the video itself was clicked:
-  if (e.target.matches("video.video")) {
-    const video = e.target;
-    const container = video.closest(".video-container");
-    const btn = container.querySelector(".btn-play-video");
-    if (!video.paused) {
-      video.pause();
-      btn.classList.remove("hidden");
+  wrapper.addEventListener("click", (e) => {
+    // click on video
+    if (e.target.matches("video.video")) {
+      const video = e.target;
+      const container = video.closest(".video-container");
+      const btn = container.querySelector(".btn-play-video");
+      if (!video.paused) {
+        video.pause();
+        btn.classList.remove("hidden");
+      }
     }
-  }
 
-  // If the play button was clicked:
-  if (e.target.matches(".btn-play-video")) {
-    const btn = e.target;
-    const container = btn.closest(".video-container");
-    const video = container.querySelector("video.video");
-    if (video.paused) {
-      video.play();
-      btn.classList.add("hidden");
+    // click on button
+    if (e.target.matches(".btn-play-video")) {
+      const btn = e.target;
+      const container = btn.closest(".video-container");
+      const video = container.querySelector("video.video");
+      if (video.paused) {
+        video.play();
+        btn.classList.add("hidden");
+      }
     }
-  }
-});
+  });
+}
